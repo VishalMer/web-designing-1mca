@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe & Apple Inspired Premium Landing Page</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Boxicons for Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader-ring"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollBar"></div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container"></div>
+
+    <!-- Floating Background Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo"><i class='bx bxl-sketch'></i> Nexus</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#video" class="nav-link">Video</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <i class='bx bx-moon'></i>
+                </button>
+                <button class="btn btn-primary login-btn">Login</button>
+                <div class="hamburger" id="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero section">
+        <div class="container hero-container">
+            <div class="hero-content reveal fade-up">
+                <div class="badge glass">✨ The Future of UI Design</div>
+                <h1 class="hero-title">Experience <span class="gradient-text type-text"></span><br> Like Never Before.</h1>
+                <p class="hero-subtitle">A stunning, modern, premium-quality responsive webpage featuring ultra-modern glassmorphism, soft neumorphism, and smooth animations.</p>
+                <div class="hero-btns">
+                    <a href="#features" class="btn btn-primary ripple">Get Started <i class='bx bx-right-arrow-alt'></i></a>
+                    <a href="#video" class="btn btn-secondary glass ripple"><i class='bx bx-play-circle'></i> Watch Demo</a>
+                </div>
+            </div>
+            <div class="hero-image reveal fade-left">
+                <div class="glass-card hero-glass-card">
+                    <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?auto=format&fit=crop&q=80&w=800" alt="Dashboard Preview" class="floating-img">
+                    <div class="glass-floating-badge badge-1"><i class='bx bx-check-shield'></i> Secure</div>
+                    <div class="glass-floating-badge badge-2"><i class='bx bx-trending-up'></i> +95% Growth</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="stats section glass-section">
+        <div class="container stats-container reveal fade-up">
+            <div class="stat-item">
+                <h2 class="counter" data-target="15000">0</h2>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-item">
+                <h2 class="counter" data-target="3200">0</h2>
+                <p>Projects Done</p>
+            </div>
+            <div class="stat-item">
+                <h2 class="counter" data-target="250">0</h2>
+                <p>Awards Won</p>
+            </div>
+            <div class="stat-item">
+                <h2><span class="counter" data-target="99">0</span>%</h2>
+                <p>Satisfaction</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section & Progress Bars -->
+    <section id="features" class="features section">
+        <div class="container">
+            <div class="section-header reveal fade-up">
+                <h2>Premium Features</h2>
+                <p>Everything you need to build incredible digital experiences.</p>
+            </div>
+            <div class="features-grid">
+                <!-- Feature Cards -->
+                <div class="glass-card feature-card reveal fade-up">
+                    <div class="feature-icon"><i class='bx bx-layer'></i></div>
+                    <h3>Glassmorphism</h3>
+                    <p>Ultra-modern translucent UI elements with background blur effects.</p>
+                </div>
+                <div class="glass-card feature-card reveal fade-up" style="transition-delay: 0.1s">
+                    <div class="feature-icon"><i class='bx bx-mobile-alt'></i></div>
+                    <h3>Responsive</h3>
+                    <p>Flawless rendering across all devices, from mobile to desktop.</p>
+                </div>
+                <div class="glass-card feature-card reveal fade-up" style="transition-delay: 0.2s">
+                    <div class="feature-icon"><i class='bx bx-moon'></i></div>
+                    <h3>Dark Mode</h3>
+                    <p>Elegant dark theme with local storage persistence.</p>
+                </div>
+                <div class="glass-card feature-card reveal fade-up" style="transition-delay: 0.3s">
+                    <div class="feature-icon"><i class='bx bx-bolt-circle'></i></div>
+                    <h3>Fast Loading</h3>
+                    <p>Optimized vanilla code ensuring lightning-fast performance.</p>
+                </div>
+            </div>
+
+            <!-- Progress Bars -->
+            <div class="skills-section mt-5 reveal fade-up">
+                <h3 class="mb-3">Our Technology Stack</h3>
+                <div class="skill-bar">
+                    <div class="skill-info"><span>HTML5 / Semantic UI</span><span>95%</span></div>
+                    <div class="progress-bg"><div class="progress-fill" data-width="95%"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info"><span>CSS3 / Animations</span><span>90%</span></div>
+                    <div class="progress-bg"><div class="progress-fill" data-width="90%"></div></div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info"><span>Vanilla JavaScript</span><span>85%</span></div>
+                    <div class="progress-bg"><div class="progress-fill" data-width="85%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="video-section section glass-section">
+        <div class="container video-container reveal fade-up">
+            <div class="video-info">
+                <h2>See it in action</h2>
+                <p>Watch our brief showcase to understand how our intuitive interface maximizes your productivity.</p>
+                <ul class="video-list">
+                    <li><i class='bx bx-check-circle'></i> Seamless integration</li>
+                    <li><i class='bx bx-check-circle'></i> Real-time analytics</li>
+                </ul>
+            </div>
+            <div class="video-wrapper glass-card">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery & Filtering -->
+    <section id="gallery" class="gallery section">
+        <div class="container">
+            <div class="section-header reveal fade-up">
+                <h2>Our Portfolio</h2>
+            </div>
+            <div class="gallery-filters reveal fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="dev">Development</button>
+            </div>
+            <div class="masonry-gallery reveal fade-up">
+                <div class="gallery-item" data-category="design">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=600" alt="Work 1">
+                    <div class="gallery-overlay"><i class='bx bx-zoom-in'></i></div>
+                </div>
+                <div class="gallery-item" data-category="dev">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=600" alt="Work 2">
+                    <div class="gallery-overlay"><i class='bx bx-zoom-in'></i></div>
+                </div>
+                <div class="gallery-item" data-category="design">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600" alt="Work 3">
+                    <div class="gallery-overlay"><i class='bx bx-zoom-in'></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section section glass-section">
+        <div class="container">
+            <div class="section-header reveal fade-up">
+                <h2>Company Journey</h2>
+            </div>
+            <div class="timeline reveal fade-up">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>2024 - Global Expansion</h3>
+                        <p>Opened offices in 5 new countries and reached 1M users.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>2022 - Series A Funding</h3>
+                        <p>Secured $10M to expand our development team.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+        <div class="container">
+            <div class="section-header reveal fade-up">
+                <h2>Transparent Pricing</h2>
+            </div>
+            <div class="pricing-grid">
+                <div class="glass-card pricing-card reveal fade-up">
+                    <h3>Basic</h3>
+                    <div class="price"><span>$</span>19<span>/mo</span></div>
+                    <ul>
+                        <li><i class='bx bx-check'></i> 1 Project</li>
+                        <li><i class='bx bx-check'></i> Basic Support</li>
+                    </ul>
+                    <button class="btn btn-secondary glass w-100 mt-3">Choose Plan</button>
+                </div>
+                <div class="glass-card pricing-card pro reveal fade-up" style="transform: scale(1.05);">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Pro</h3>
+                    <div class="price"><span>$</span>49<span>/mo</span></div>
+                    <ul>
+                        <li><i class='bx bx-check'></i> Unlimited Projects</li>
+                        <li><i class='bx bx-check'></i> Priority Support</li>
+                        <li><i class='bx bx-check'></i> Analytics Dashboard</li>
+                    </ul>
+                    <button class="btn btn-primary w-100 mt-3">Choose Plan</button>
+                </div>
+                <div class="glass-card pricing-card reveal fade-up">
+                    <h3>Enterprise</h3>
+                    <div class="price"><span>$</span>99<span>/mo</span></div>
+                    <ul>
+                        <li><i class='bx bx-check'></i> Custom Solutions</li>
+                        <li><i class='bx bx-check'></i> 24/7 Dedicated Support</li>
+                    </ul>
+                    <button class="btn btn-secondary glass w-100 mt-3">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Complex Form -->
+    <section class="form-section section glass-section">
+        <div class="container reveal fade-up">
+            <div class="section-header">
+                <h2>Join The Network</h2>
+                <p>Fill out the comprehensive application below.</p>
+            </div>
+            <form id="premiumForm" class="glass-card premium-form">
+                <!-- Form Progress -->
+                <div class="form-progress">
+                    <div class="form-progress-bar" id="formProgressBar"></div>
+                </div>
+
+                <div class="form-grid">
+                    <div class="input-group">
+                        <input type="text" id="fullname" required>
+                        <label for="fullname">Full Name</label>
+                        <i class='bx bx-user icon'></i>
+                        <span class="error-msg">Name is required</span>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Email Address</label>
+                        <i class='bx bx-envelope icon'></i>
+                        <span class="error-msg">Valid email required</span>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" id="mobile" required>
+                        <label for="mobile">Mobile Number</label>
+                        <i class='bx bx-phone icon'></i>
+                    </div>
+                    <div class="input-group">
+                        <select id="country" required>
+                            <option value=""></option>
+                            <option value="US">United States</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="IN">India</option>
+                        </select>
+                        <label for="country">Country</label>
+                    </div>
+                    
+                    <!-- Password with toggle and strength -->
+                    <div class="input-group">
+                        <input type="password" id="password" required>
+                        <label for="password">Password</label>
+                        <i class='bx bx-lock-alt icon'></i>
+                        <i class='bx bx-show toggle-password'></i>
+                        <div class="password-strength">
+                            <div class="strength-bar" id="strengthBar"></div>
+                        </div>
+                    </div>
+
+                    <!-- Image Upload Preview -->
+                    <div class="input-group full-width file-upload">
+                        <input type="file" id="profilePic" accept="image/*" hidden>
+                        <label for="profilePic" class="file-label">
+                            <i class='bx bx-cloud-upload'></i>
+                            <span>Upload Profile Picture</span>
+                        </label>
+                        <img id="imagePreview" src="" alt="Preview" class="hidden">
+                    </div>
+
+                    <div class="input-group full-width">
+                        <textarea id="message" rows="4" maxlength="200" required></textarea>
+                        <label for="message">Your Message</label>
+                        <div class="char-counter"><span id="charCount">0</span>/200</div>
+                    </div>
+
+                    <div class="checkbox-group full-width">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 mt-4 ripple" id="submitBtn">
+                    <span>Submit Application</span>
+                    <i class='bx bx-send'></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="faq section">
+        <div class="container reveal fade-up">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="accordion glass-card">
+                <div class="accordion-item">
+                    <div class="accordion-header">What technologies are used? <i class='bx bx-chevron-down'></i></div>
+                    <div class="accordion-body">This page is built using 100% Vanilla HTML, CSS, and JavaScript. No external frameworks like React, Vue, or Tailwind were used.</div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">Is this fully responsive? <i class='bx bx-chevron-down'></i></div>
+                    <div class="accordion-body">Yes, the layout uses modern CSS Grid and Flexbox with media queries to ensure pixel-perfect rendering on all screen sizes.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer glass-section">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2><i class='bx bxl-sketch'></i> Nexus</h2>
+                    <p>Building the next generation of premium digital experiences.</p>
+                    <div class="social-links">
+                        <a href="#" class="ripple"><i class='bx bxl-twitter'></i></a>
+                        <a href="#" class="ripple"><i class='bx bxl-linkedin'></i></a>
+                        <a href="#" class="ripple"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Subscribe</h3>
+                    <p>Get the latest updates and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter email address" required>
+                        <button type="submit" class="btn btn-primary"><i class='bx bx-right-arrow-alt'></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nexus Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button (Back to top) -->
+    <button class="fab" id="backToTop" aria-label="Back to Top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </button>
+
+    <!-- Modal Popup -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <img src="" alt="Enlarged image" id="modalImg">
+        </div>
+    </div>
+
+    <!-- Cookie Consent -->
+    <div class="cookie-popup glass-card" id="cookiePopup">
+        <p>We use cookies to enhance your experience. <a href="#">Learn more</a>.</p>
+        <button class="btn btn-primary btn-sm" id="acceptCookies">Accept</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

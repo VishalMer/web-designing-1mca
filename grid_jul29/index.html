@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .main{
+            border: 2px solid white;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(6, 100px);
+            grid-template-areas: "logo nav nav nav nav nav"
+                                    "p1 p1 p1 p2 p2 p2"
+                                    "img1 img2 img3 img4 img5 img6"
+                                    "cont1 cont1 cont1 cont1 img7 img8"
+                                    "img9 img10 cont2 cont2 cont2 cont2"
+                                    "footer footer footer footer footer footer";
+        }
+        .logo{
+            grid-area: logo;
+            background-color: #2A2B2A;
+        }
+        .nav{
+            grid-area: nav;
+            background-color: #706C61;
+        }
+        .p1{
+            grid-area: p1;
+            background-color: #F8F4E3;
+        }
+        .p2{
+            grid-area: p2;
+            background-color: #E5446D;
+        }
+        .img1{
+            grid-area: img1;
+            background-color: #FF8966;
+        }
+        .img2{
+            grid-area: img2;
+            background-color: #9CD08F;
+        }
+        .img3{
+            grid-area: img3;
+            background-color: #F5A6E6;
+        }
+        .img4{
+            grid-area: img4;
+            background-color: #F5A6E6;
+        }
+        .img5{
+            grid-area: img5;
+            background-color: #FFFBFC;
+        }
+        .img6{
+            grid-area: img6;
+            background-color: #DAF7DC;
+        }
+        .cont1{
+            grid-area: cont1;
+            background-color: #ABC8C0;
+        }
+        .img7{
+            grid-area: img7;
+            background-color: #E1E5F2;
+        }
+        .img8{
+            grid-area: img8;
+            background-color: #BFDBF7;
+        }
+        .img9{
+            grid-area: img9;
+            background-color: #E5C3D1;
+        }
+        .img10{
+            grid-area: img10;
+            background-color: #EF798A;
+        }
+        .cont2{
+            grid-area: cont2;
+            background-color: #2A2A72;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: #613F75;
+        }
+        .grid_item{
+            border: 2px solid rgb(170, 119, 233);
+            height: 100px;
+            color: rgb(223, 139, 14);
+            text-align: center;
+            font-weight: 700;
+            text-transform: capitalize;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="grid_item logo">logo</div>
+        <div class="grid_item nav">nav</div>
+        <div class="grid_item p1">pra1</div>
+        <div class="grid_item p2">para2</div>
+        <div class="grid_item img1">img1</div>
+        <div class="grid_item img2">img2</div>
+        <div class="grid_item img3">img3</div>
+        <div class="grid_item img4">img4</div>
+        <div class="grid_item img5">img5</div>
+        <div class="grid_item img6">img6</div>
+        <div class="grid_item cont1">cont1</div>
+        <div class="grid_item img7">img7</div>
+        <div class="grid_item img8">img8</div>
+        <div class="grid_item img9">img9</div>
+        <div class="grid_item img10">img10</div>
+        <div class="grid_item cont2">cont2</div>
+        <div class="grid_item footer">footer</div>
+    </div>
+</body>
+</html>

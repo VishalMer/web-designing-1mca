@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Bootstrap Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <style>
+        body {
+            /* Added a soft gradient background to the whole page */
+            background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+            min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            background: linear-gradient(90deg, #007bff, #6610f2);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: none;
+            margin: 20px 0;
+            font-size: 32px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .div {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container pb-5">
+        
+        <div class="row">
+            <div class="col-12">
+                <h1>Welcome to the Learning Lab 10</h1>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded shadow-sm">
+                    <div class="container-fluid">
+                        <a class="navbar-brand fw-bold" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-warning" href="#">Special Offer</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col-lg-10">
+                <div id="carouselExampleIndicators" class="carousel slide shadow-sm rounded overflow-hidden">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://picsum.photos/1200/400?random=1" class="d-block w-100" alt="Slide 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/1200/400?random=2" class="d-block w-100" alt="Slide 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://picsum.photos/1200/400?random=3" class="d-block w-100" alt="Slide 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <figure class="figure p-2 bg-white border rounded shadow-sm">
+                    <img src="https://picsum.photos/400/300?random=4" class="figure-img img-fluid rounded" alt="Side Image">
+                    <figcaption class="figure-caption text-primary fw-bold text-center">Featured Pick</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-lg-4">
+                <div class="card mb-3 border-primary shadow-sm">
+                    <img src="https://picsum.photos/300/200?random=5" class="card-img-top" alt="Card Image 1">
+                    <div class="card-body bg-light">
+                        <h5 class="card-title text-primary">Primary Card</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card mb-3 border-primary" aria-hidden="true">
+                    <img src="https://picsum.photos/300/200?random=6" class="card-img-top opacity-50" alt="Placeholder Image">
+                    <div class="card-body bg-light">
+                        <h5 class="card-title placeholder-glow">
+                            <span class="placeholder col-6 bg-primary"></span>
+                        </h5>
+                        <p class="card-text placeholder-glow">
+                            <span class="placeholder col-7 bg-secondary"></span>
+                            <span class="placeholder col-4 bg-secondary"></span>
+                            <span class="placeholder col-4 bg-secondary"></span>
+                            <span class="placeholder col-6 bg-secondary"></span>
+                        </p>
+                        <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card mb-3 border-success shadow-sm">
+                    <img src="https://picsum.photos/300/200?random=7" class="card-img-top" alt="Card Image 2">
+                    <div class="card-body bg-light">
+                        <h5 class="card-title text-success">Success Card</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-success">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card mb-3 border-success" aria-hidden="true">
+                    <img src="https://picsum.photos/300/200?random=8" class="card-img-top opacity-50" alt="Placeholder Image">
+                    <div class="card-body bg-light">
+                        <h5 class="card-title placeholder-glow">
+                            <span class="placeholder col-6 bg-success"></span>
+                        </h5>
+                        <p class="card-text placeholder-glow">
+                            <span class="placeholder col-7 bg-secondary"></span>
+                            <span class="placeholder col-4 bg-secondary"></span>
+                            <span class="placeholder col-4 bg-secondary"></span>
+                            <span class="placeholder col-6 bg-secondary"></span>
+                        </p>
+                        <a class="btn btn-success disabled placeholder col-6" aria-disabled="true"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card mb-3 border-danger shadow-sm">
+                    <img src="https://picsum.photos/300/200?random=9" class="card-img-top" alt="Card Image 3">
+                    <div class="card-body bg-light">
+                        <h5 class="card-title text-danger">Danger Card</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-danger">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card mb-3 border-danger" aria-hidden="true">
+                    <img src="https://picsum.photos/300/200?random=10" class="card-img-top opacity-50" alt="Placeholder Image">
+                    <div class="card-body bg-light">
+                        <h5 class="card-title placeholder-glow">
+                            <span class="placeholder col-6 bg-danger"></span>
+                        </h5>
+                        <p class="card-text placeholder-glow">
+                            <span class="placeholder col-7 bg-secondary"></span>
+                            <span class="placeholder col-4 bg-secondary"></span>
+                            <span class="placeholder col-4 bg-secondary"></span>
+                            <span class="placeholder col-6 bg-secondary"></span>
+                        </p>
+                        <a class="btn btn-danger disabled placeholder col-6" aria-disabled="true"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4 align-items-center">
+            <div class="col-lg-6 col-md-6 mb-3 text-center text-md-start">
+                <button class="btn btn-info text-white shadow-sm fw-bold px-4 py-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                    Toggle Sidebar Menu
+                </button>
+
+                <div class="offcanvas offcanvas-start bg-dark text-white" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                    aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header border-bottom border-secondary">
+                        <h5 class="offcanvas-title text-info" id="staticBackdropLabel">Dark Offcanvas</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            I have a dark theme now and will not close if you click outside of me.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 mb-3 d-flex justify-content-center justify-content-md-end">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination shadow-sm">
+                        <li class="page-item"><a class="page-link text-primary" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link text-primary" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link bg-primary text-white border-primary" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link text-primary" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link text-primary" href="#">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Full solid color cards -->
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card text-bg-primary shadow-sm" style="width: 100%;">
+                    <img src="https://picsum.photos/300/200?random=11" class="card-img-top" alt="Gallery Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Ocean Blue</h5>
+                        <p class="card-text">Some quick example text to build on the card title.</p>
+                        <a href="#" class="btn btn-light text-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card text-bg-success shadow-sm" style="width: 100%;">
+                    <img src="https://picsum.photos/300/200?random=12" class="card-img-top" alt="Gallery Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Forest Green</h5>
+                        <p class="card-text">Some quick example text to build on the card title.</p>
+                        <a href="#" class="btn btn-light text-success">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card text-bg-warning shadow-sm" style="width: 100%;">
+                    <img src="https://picsum.photos/300/200?random=13" class="card-img-top" alt="Gallery Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Sunset Yellow</h5>
+                        <p class="card-text">Some quick example text to build on the card title.</p>
+                        <a href="#" class="btn btn-dark">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="card text-bg-dark shadow-sm" style="width: 100%;">
+                    <img src="https://picsum.photos/300/200?random=14" class="card-img-top" alt="Gallery Image 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Midnight Black</h5>
+                        <p class="card-text">Some quick example text to build on the card title.</p>
+                        <a href="#" class="btn btn-outline-light">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4 mb-5">
+            <div class="col-12">
+                <div class="d-flex bg-white rounded shadow-sm border p-3">
+                    <div class="p-3 flex-fill rounded bg-info text-dark fw-bold m-2 text-center shadow-sm">Flex item with a lot of content</div>
+                    <div class="p-3 flex-fill rounded bg-warning text-dark fw-bold m-2 text-center shadow-sm">Flex item</div>
+                    <div class="p-3 flex-fill rounded bg-danger text-white fw-bold m-2 text-center shadow-sm">Flex item</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

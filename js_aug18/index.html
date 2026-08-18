@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <form action="">
+        <label for="num1">Enter first number: </label>
+        <input type="text" id="num1" name="num1" required><br>
+
+        <label for="num2">Enter second number: </label>
+        <input type="text" id="num2" name="num2" required><br><br>
+
+        <p>Click the button for operation you want to perform:</p>
+        <button type="button" onclick="addition()">Addition</button>
+        <button type="button" onclick="subtraction()">Subtraction</button>
+        <button type="button" onclick="multiplication()">Multiplication</button>
+        <button type="button" onclick="division()">Division</button>
+
+        <p id="result">Your result will appear here.</p>
+        <hr><hr>
+        <div class="container">
+            <p>This is paragraph number 1</p>
+            <p>This is paragraph number 2</p>
+            <p onmouseenter="highlight()" onmouseleave="unhighlight()">This is paragraph number 3</p>
+            <p>This is paragraph number 4</p>
+            <p>This is paragraph number 5</p>
+            <button type="button" onclick="changeColor()">Change Color</button>
+        </div>
+    </form>    
+</body>
+</html>
