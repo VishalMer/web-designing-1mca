@@ -24,7 +24,7 @@ To keep things organized chronologically, each day's classwork is stored in its 
 ## 🚀 How to Run Locally
 
 1. Clone the repository to your local machine using the following command:
-   `git clone https://github.com/yourusername/mca-sem1-web-design.git`
+   `git clone https://github.com/VishalMer/web-designing-1mca.git`
 2. Open the project directory in your preferred IDE (like WebStorm or VS Code).
 3. Open any `.html` file directly in your web browser or run it using a local development server (like Live Server or Laragon).
 
